@@ -1,0 +1,7 @@
+.body_area_2 {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}

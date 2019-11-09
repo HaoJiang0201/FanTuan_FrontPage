@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './TopArea/Navbar';
+import Advertise from './TopArea/Advertise';
+import BodyArea0 from './BodyArea/BodyArea0';
+import BodyArea1 from './BodyArea/BodyArea1';
+import BodyArea2 from './BodyArea/BodyArea2';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Reac JS</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="app">
+        <Navbar />
+        <Advertise />
+        <BodyArea0 />
+        {/* <BodyArea1 />
+        <BodyArea2 /> */}
       </div>
     );
   }
