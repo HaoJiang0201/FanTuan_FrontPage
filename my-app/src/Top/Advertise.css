@@ -1,0 +1,69 @@
+.advertise {
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 500px;
+}
+
+.title_picture {
+  width:100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/04/ave-canada-3.jpg"); 
+}
+
+.title_picture_mask {
+  width:100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.tiltle_text_large {
+  color: white;
+  /* font-weight: bold; */
+  font-size: 60px;
+  position: relative;
+  top: -400px;
+  left: 10vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tiltle_text_small {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: -300px;
+  left: 10vw;
+}
+
+.title_try_button {
+  background-color: #1CB9B6;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: -250px;
+  left: 10vw;
+  width: 125px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 25px;
+  -webkit-transition: all .5s; 
+  -moz-transition: all .5s; 
+  -ms-transition: all .5s; 
+  -o-transition: all .5s; 
+  transition: all .5s;
+}
+
+.title_try_button:hover {
+  background-color: white;
+  color: black;
+}

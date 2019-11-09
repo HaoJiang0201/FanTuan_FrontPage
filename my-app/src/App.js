@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './TopArea/Navbar';
-import Advertise from './TopArea/Advertise';
-import BodyArea0 from './BodyArea/BodyArea0';
-import BodyArea1 from './BodyArea/BodyArea1';
-import BodyArea2 from './BodyArea/BodyArea2';
+import Navbar from './Top/Navbar';
+import Advertise from './Top/Advertise';
+import BodyArea0 from './Body/BodyArea0';
+import BodyArea1 from './Body/BodyArea1';
+import BodyArea2 from './Body/BodyArea2';
+import BottomArea from './Bottom/BottomArea';
 
 class App extends Component {
   render() {
@@ -13,8 +14,9 @@ class App extends Component {
         <Navbar />
         <Advertise />
         <BodyArea0 />
-        {/* <BodyArea1 />
-        <BodyArea2 /> */}
+        <BodyArea1 />
+        <BodyArea2 />
+        <BottomArea />
       </div>
     );
   }
