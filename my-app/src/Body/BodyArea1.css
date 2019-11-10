@@ -1,7 +1,111 @@
 .body_area_1 {
-  background-color: lightblue;
+  background-color: #1CB9B6;
+  width: 100vw;
+  height: 590px;
+}
+
+.area1_title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100vw;
+  height: 40px;
+  margin:0px;
+  margin-bottom: 50px;
+  padding: 0px;
+  padding-top: 40px;
+}
+
+.area1_body {
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 300px;
+  width: 60vw;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
+
+.area1_list_area {
+  width: 30vw;
+  height: 400px;
+}
+
+.area1_list_item {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  height: 60px;
+  margin-bottom: 22px;
+}
+
+.area1_list_item_image {
+  width:40px;
+  height:40px;
+  margin: 25px;
+  margin-left: 35px;
+  margin-right: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.area1_list_item_info {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size: 22px;
+  width:300px;
+  height:30px;
+  padding: 0px;
+  margin-top: 6px;
+  margin-bottom: auto;
+}
+
+.area1_list_item_detail {
+  color: white;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 14px;
+  width:300px;
+  height:20px;
+  padding: 0px;
+}
+
+.area1_image_area {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  height: 400px;
+}
+
+.area1_image {
+  width: 426.67px;
+  height: 347.79px;
+  margin-top: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/feature.png"); 
+}
+
+.list_item_image_0 {
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/04/unnamed-file-1.jpg"); 
+}
+
+.list_item_image_1 {
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/04/unnamed-file-2.jpg"); 
+}
+
+.list_item_image_2 {
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/04/location_line.jpg"); 
+}
+
+.list_item_image_3 {
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/04/unnamed-file.jpg"); 
+}
+
+

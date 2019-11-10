@@ -1,9 +1,9 @@
 .advertise {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 500px;
+  height: 522.31px;
 }
 
 .title_picture {
@@ -23,20 +23,25 @@
 
 .tiltle_text_large {
   color: white;
-  /* font-weight: bold; */
   font-size: 60px;
   position: relative;
-  top: -400px;
   left: 10vw;
   margin: 0px;
   padding: 0px;
+}
+
+.title_posy_0 {
+  top: -385px;
+}
+.title_posy_1 {
+  top: -405px;
 }
 
 .tiltle_text_small {
   color: white;
   font-size: 18px;
   position: relative;
-  top: -300px;
+  top: -390px;
   left: 10vw;
 }
 
@@ -49,9 +54,9 @@
   font-weight: bold;
   font-size: 18px;
   position: relative;
-  top: -250px;
+  top: -355px;
   left: 10vw;
-  width: 125px;
+  width: 130px;
   height: 50px;
   margin: 0px;
   padding: 0px;
@@ -64,6 +69,7 @@
 }
 
 .title_try_button:hover {
+  cursor: pointer;
   background-color: white;
   color: black;
 }
