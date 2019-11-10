@@ -27,13 +27,14 @@
   left: 10vw;
   margin: 0px;
   padding: 0px;
+  width: 70vw;
 }
 
 .title_posy_0 {
-  top: -385px;
+  top: -390px;
 }
 .title_posy_1 {
-  top: -405px;
+  top: -410px;
 }
 
 .tiltle_text_small {
@@ -42,6 +43,7 @@
   position: relative;
   top: -390px;
   left: 10vw;
+  width: 80vw;
 }
 
 .title_try_button {

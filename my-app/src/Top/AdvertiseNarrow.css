@@ -1,0 +1,21 @@
+.advertise_narrow {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 600px;
+}
+
+.title_posy_0_narrow {
+  top: -490px;
+}
+.title_posy_1_narrow {
+  top: -510px;
+}
+
+.tiltle_text_small_narrow {
+  top: -490px;
+}
+
+.title_try_button_narrow {
+  top: -455px;
+}
