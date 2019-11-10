@@ -72,6 +72,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/logo.png"); 
+  /* background-image: url("https://www.fantuan.ca/wp-content/plugins/artbees-captcha/generate-captcha.php");  */
+  
 }
 
 .menu_area {

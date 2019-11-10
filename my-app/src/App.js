@@ -15,6 +15,7 @@ class App extends Component {
     this.state = {
       strNavbarMask: "navbar_bg navbar_bg_init",  // 顶部栏底色的初始状态
       bNavbarShow: false,  // 是否显示顶部栏的底色
+      bSuperNarrow: false
     };
     this.strNavbarMaskIn = "navbar_bg navbar_bg_in";  // 顶部栏底色淡入
     this.strNavbarMaskOut = "navbar_bg navbar_bg_out";  // 顶部栏底色淡出
@@ -47,16 +48,25 @@ class App extends Component {
   }
 
   WindowSizeCondition (iWidth) {
-    // 当窗口小于一定宽度时，
-    if(iWidth <= 950){
+    this.bSizeNarrow = false;
+    this.bSuperNarrow = false;
+    // 当窗口小于一定宽度时
+    if(iWidth <= 1000){
       this.bSizeNarrow = true;
-      if(iWidth <= 670) {
-        this.bSuperNarrow = true;
-      } else {
-        this.bSuperNarrow = false;
-      }
-    } else {
-      this.bSizeNarrow = false;
+    }
+    if(iWidth <= 700) {
+      this.bSizeNarrow = true;
+      this.bSuperNarrow = true;
+      this.setState({
+        ...this.state,
+        bSuperNarrow: true
+      });
+    } else
+    {
+      this.setState({
+        ...this.state,
+        bSuperNarrow: false
+      });
     }
     this.SetNavbarMaskState();
   }
@@ -96,7 +106,7 @@ class App extends Component {
       <div className="app">
          <div className={this.state.strNavbarMask}/>
         <Navbar bMenuFold={this.bSizeNarrow}/>
-        <Advertise  bSuperNarrow={this.bSuperNarrow} />
+        <Advertise bNarrow={this.bSizeNarrow} bSuperNarrow={this.bSuperNarrow} />
         <BodyArea0 />
         <BodyArea1 />
         <BodyArea2 />

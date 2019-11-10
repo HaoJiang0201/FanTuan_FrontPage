@@ -74,3 +74,97 @@
   background-color: white;
   color: black;
 }
+
+.scan_code_dlg {
+  background: black;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.scan_code_bg {
+  background: white;
+  position: fixed;
+  top: 150px;
+  left: 37vw;
+  width: 26vw;
+  height: 26vw;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.scan_code_bg_narrow {
+  top: 165px;
+  left: 32vw;
+  width: 36vw;
+  height: 36vw;
+}
+
+.scan_code_bg_super_narrow {
+  top: 180px;
+  left: 25vw;
+  width: 50vw;
+  height: 50vw;
+}
+
+.close_button {
+  background-color: black;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-left: auto;
+  margin-right: -1.5vw;
+  margin-top: -1.5vw;
+  padding-top: 0.5vw;
+  padding-left: 0.25vw;
+  padding-right: 0.25vw;
+  border-radius: 42px;
+  opacity: 0.9;
+}
+
+.scan_code_img {
+  width:70%;
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2019/04/qr5.jpg"); 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+}
+
+.download_links {
+  width: 100%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.apple_link {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/appledownload.png"); 
+  width: 35%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 1%;
+}
+
+.google_link {
+  width: 35%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/googledownload.png"); 
+  margin-left: 1%;
+  margin-right: auto;
+}
