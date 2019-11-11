@@ -1,7 +1,11 @@
 .body_area_1 {
   background-color: #1CB9B6;
   width: 100vw;
-  height: 590px;
+  height: 575px;
+}
+
+.body_area_1_narrow {
+  height: 1000px;
 }
 
 .area1_title {
@@ -20,6 +24,15 @@
 .area1_body {
   display: flex;
   align-items: center;
+  width: 60vw;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.area1_body_narrow {
   width: 60vw;
   height: 400px;
   margin-left: auto;
@@ -74,18 +87,25 @@
 }
 
 .area1_image_area {
-  display: flex;
-  align-items: center;
-  width: 30vw;
-  height: 400px;
+  width: 36vw;
+  height: 24.5vw;
+  padding-top: 40px;
+}
+
+.area1_image_area_narrow {
+  width: 60vw;
+  height: 49vw;
+  padding-top: 0px;
 }
 
 .area1_image {
-  width: 426.67px;
-  height: 347.79px;
+  /* width: 426.67px;
+  height: 347.79px; */
+  width: 100%;
+  height: 100%;
   margin-top: auto;
   margin-bottom: 0px;
-  margin-left: auto;
+  margin-left: 2vw;
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;

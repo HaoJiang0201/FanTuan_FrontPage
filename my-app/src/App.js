@@ -24,6 +24,7 @@ class App extends Component {
     this.strNavbarMaskOut = "navbar_bg navbar_bg_out";  // 顶部栏底色淡出
     this.bScrollDown = false;  // 向下滑动状态监控
     this.bSizeNarrow = false;    // 屏幕横向缩放状态监控
+    this.bMidNarrow = false;    // 介于两种之间的横向缩放状态
     this.bSuperNarrow = false;    // 屏幕横向大幅度缩放状态监控
     this.iScrollDownHeight = 0;  // 用于记录当前向下滑动的高度
     this.iScrollBackStep=0;  // 用于计算返回顶部动画的移动步长, 避免因为下滑过深返回顶部速度太慢
@@ -59,13 +60,19 @@ class App extends Component {
   // 窗口缩放状态监控
   WindowSizeCondition (iWidth) {
     this.bSizeNarrow = false;
+    this.bMidNarrow = false;
     this.bSuperNarrow = false;
     // 当窗口小于一定宽度时
-    if(iWidth <= 1000){
+    if(iWidth <= 1050){
       this.bSizeNarrow = true;
     }
-    if(iWidth <= 700) {
+    if(iWidth <= 900) {
       this.bSizeNarrow = true;
+      this.bMidNarrow = true;
+    }
+    if(iWidth <= 750) {
+      this.bSizeNarrow = true;
+      this.bMidNarrow = true;
       this.bSuperNarrow = true;
       this.setState({
         ...this.state,
@@ -106,7 +113,6 @@ class App extends Component {
 
   // 联系我们按钮弹窗
   MessageDlgShow() {
-    console.log("Message Us");
     if(this.state.bMessageDlg) {
       this.setState({
         ...this.state,
@@ -208,9 +214,9 @@ class App extends Component {
          <div className={this.state.strNavbarMask}/>
         <Navbar bMenuFold={this.bSizeNarrow}/>
         <Advertise bNarrow={this.bSizeNarrow} bSuperNarrow={this.bSuperNarrow} />
-        <BodyArea0 />
-        <BodyArea1 />
-        <BodyArea2 />
+        <BodyArea0 bSuperNarrow={this.bSuperNarrow} />
+        <BodyArea1 bSizeNarrow={this.bSizeNarrow} />
+        <BodyArea2 bMidNarrow={this.bMidNarrow}/>
         <BottomArea />
         {BottomButtonArea}
         {MessageUsDlg}

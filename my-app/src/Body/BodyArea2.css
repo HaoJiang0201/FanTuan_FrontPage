@@ -2,6 +2,11 @@
   background-color: white;
   width: 100vw;
   height: 525px;
+  overflow: hidden;
+}
+
+.body_area_2_narrow {
+  height: 1150px;
 }
 
 .area2_title {
@@ -18,11 +23,19 @@
 }
 
 .block_area {
-  /* background-color: lightcoral; */
   display: flex;
   align-items: center;
   width: 75vw;
   height: 425px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.block_area_narrow {
+  width: 100vw;
+  height: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5vw;
@@ -46,6 +59,13 @@
   transition: all .2s;
 }
 
+.block_narrow {
+  margin-top: 1.5vw;
+  padding-top: 2.5vw;
+  width: 70vw;
+  height: 37.5vw;
+}
+
 .block:hover {
   margin-bottom: 5px;
   box-shadow: 0px -5px 15px 10px rgba(0,0,0,0.06)
@@ -54,16 +74,18 @@
 .block_image {
   background-size: cover;
   background-repeat: no-repeat;
-  width:150px;
-  height: 150px;
+  /* width:150px;
+  height: 150px; */
+  width:10vw;
+  height: 10vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 3vw;
+  margin-bottom: 1.5vw;
 }
 
 .block_image_0 {
-  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/unnamed-file-4-150x150.png"); 
+  background-image: url("https://www.fantuan.ca/wp-content/uploads/2018/03/unnamed-file-4-150x150.png");
 }
 
 .block_image_1 {
@@ -85,7 +107,9 @@
   color: #777777;
   font-size: 14px;
   text-align: left;
-  width: 300px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }

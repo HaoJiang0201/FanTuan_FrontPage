@@ -3,12 +3,21 @@ import './BodyArea1.css';
 
 class BodyArea1 extends Component {
 
-
   render() {
+
+    let strPageStyle = "body_area_1";
+    let strBodyStyle = "area1_body";
+    let strImageAreaStyle = "area1_image_area";
+    if(this.props.bSizeNarrow) {
+      strPageStyle = "body_area_1 body_area_1_narrow";
+      strBodyStyle = "area1_body_narrow";
+      strImageAreaStyle = "area1_image_area_narrow";
+    }
+
     return (
-      <div className="body_area_1">
+      <div className={strPageStyle}>
         <div className="area1_title">饭团特色</div>
-        <div className="area1_body">
+        <div className={strBodyStyle}>
           <div className="area1_list_area">
             <div className="area1_list_item">
               <div className="area1_list_item_image list_item_image_0" />
@@ -47,9 +56,8 @@ class BodyArea1 extends Component {
               </div>
             </div>
           </div>
-          <div className="area1_image_area">
+          <div className={strImageAreaStyle}>
             <div className="area1_image">
-            
             </div>
           </div>
         </div>

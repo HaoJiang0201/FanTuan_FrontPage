@@ -1,7 +1,11 @@
 .body_area_0 {
   background-color: white;
   width: 100vw;
-  height: 525px;
+  height: 550px;
+}
+
+.body_area_0_narrow {
+  height: 1250px;
 }
 
 .area0_title {
@@ -23,7 +27,7 @@
   width: 100vw;
   height: 70px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 0px;
 }
 
@@ -37,6 +41,7 @@
   margin-left:auto;
 }
 
+
 .items_block_area {
   display: flex;
   align-items: center;
@@ -46,13 +51,28 @@
   margin-right: auto;
 }
 
+.items_block_area_narrow {
+  width: 40vw;
+  height: 900px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
 .item_block {
   text-align: center;
   width: 24vw;
   height: 300px;
-  margin-top: 30px; 
+  min-width: 12vw;
+  margin-top: 50px; 
   margin-left: auto;
   margin-right: auto;
+}
+
+.item_block_narrow {
+  margin-top: 0px; 
 }
 
 .divider {

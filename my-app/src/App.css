@@ -128,11 +128,11 @@
 }
 
 .message_code {
-  width: 250px;
-  height: 85px;
+  width: 200px;
+  height: 75px;
+  margin-top:10px;
   margin-left: 20px;
-  margin-right: auto;
-  padding: 0px;
+  margin-right: 0px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://www.fantuan.ca/wp-content/plugins/artbees-captcha/generate-captcha.php"); 
