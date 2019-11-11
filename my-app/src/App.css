@@ -11,3 +11,133 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently  not supported by any browser */
 }
+
+.bottom_buttons_area {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  height: 50px;
+  position: fixed;
+  right: 1.1vw;
+  bottom: 2.2vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bottom_buttons_message {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.easyicon.net/api/resizeApi.php?id=544592&size=48"); 
+  opacity: 0.8;
+}
+
+.bottom_buttons_message:hover {
+  background-color: #1CB9B6;
+  opacity: 1;
+}
+
+.bottom_buttons_up {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.easyicon.net/api/resizeApi.php?id=544448&size=48"); 
+  opacity: 0.6;
+}
+
+.bottom_buttons_up:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+.message_us_dlg {
+  background-color: lightgray;
+  width: 250px;
+  height: 500px;
+  position: fixed;
+  right: 1.1vw;
+  bottom: 9.3vh;
+  padding: 5px;
+}
+
+.message_title {
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 25px;
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+.message_intro {
+  color:black;
+  font-size: 12.5px;
+  text-align: center;
+  width: 250px;
+  height: 20px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.message_input {
+  background: white;
+  width: 220px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 8px;
+  margin-right: auto;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+.message_textarea {
+  background: white;
+  width: 220px;
+  height: 90px;
+  max-width: 220px;
+  max-height: 90px;
+  min-width: 220px;
+  min-height: 90px;
+  margin: 8px;
+  margin-right: auto;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+.message_refresh_link {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 80px;
+  margin-right: auto;
+}
+
+.message_code {
+  width: 250px;
+  height: 85px;
+  margin-left: 20px;
+  margin-right: auto;
+  padding: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fantuan.ca/wp-content/plugins/artbees-captcha/generate-captcha.php"); 
+  
+}
+
+
+
